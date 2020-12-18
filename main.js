@@ -26,7 +26,7 @@ const addTogether = ((x, y) => (x + y))
 const reducerEngine = (func, arr, num) => {
   let accumulator = num ? num : 0
   let len = arr.length
-  for (let i = 0; i != len; i++) {
+  for (let i = 0; i != len; i++) { 
     accumulator = func(accumulator, arr[i])
   }
   return accumulator.toFixed(2)
